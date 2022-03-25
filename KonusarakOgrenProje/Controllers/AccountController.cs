@@ -32,17 +32,17 @@ namespace KonusarakOgrenExamProject.Controllers
                     #region AddUser
                     
 
-                    if (dbContext.UserModels.Where(x => x.Username.Equals("erdemkivanc") && x.Password.Equals("12345")).FirstOrDefault() == null)
+                    if (dbContext.UserModels.Where(x => x.Username.Equals("helidemir") && x.Password.Equals("12345")).FirstOrDefault() == null)
                     {
                         dbContext.Add(new UserModel()
                         {
-                            Username = "erdemkivanc",
+                            Username = "helidemir",
                             Password = "12345",
                             IsActive = true,
                             IsAdmin = true,
                             CreatedDate = DateTime.Now,
                             UpdatedDate = DateTime.Now,
-                            UpdatedUsername = "erdemkivanc"
+                            UpdatedUsername = "helidemir"
                         });
 
                         dbContext.SaveChanges();
